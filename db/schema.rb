@@ -11,9 +11,22 @@
 
 ActiveRecord::Schema.define(:version => 21) do
 
+  create_table "assets", :force => true do |t|
+    t.string   "caption"
+    t.string   "title"
+    t.string   "asset_file_name"
+    t.string   "asset_content_type"
+    t.integer  "asset_file_size"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "config", :force => true do |t|
-    t.string "key",   :default => ""
-    t.string "value", :default => ""
+    t.string "key",         :default => ""
+    t.string "value",       :default => ""
+    t.text   "description"
   end
 
   add_index "config", ["key"], :name => "key", :unique => true
@@ -37,20 +50,9 @@ ActiveRecord::Schema.define(:version => 21) do
   end
 
   create_table "page_attachments", :force => true do |t|
-    t.string   "content_type"
-    t.string   "filename"
-    t.integer  "size"
-    t.integer  "parent_id"
-    t.string   "thumbnail"
-    t.integer  "width"
-    t.integer  "height"
-    t.datetime "created_at"
-    t.integer  "created_by"
-    t.datetime "updated_at"
-    t.integer  "updated_by"
-    t.integer  "page_id"
-    t.string   "title"
-    t.text     "description"
+    t.integer "asset_id"
+    t.integer "page_id"
+    t.integer "position"
   end
 
   create_table "page_parts", :force => true do |t|
