@@ -20,6 +20,17 @@ extensions for larger Radiant sites.
     
 4. Follow the instructions in INSTALL to get the site up and running
 
+=== Contributing to radiant-base
+
+The master branch just tracks the official Radiant repo.
+The small branch has the extensions needed for a small Radiant site. Any changes to README etc. should be made here and then merged into the medium branch.
+The medium branch has everything the small branch has, plus more extensions needed for medium-sized sites.
+
+==== Merging changes in small into medium
+
+% git checkout medium
+% git merge small
+
 == Welcome to Radiant
 
 Radiant is a no-fluff, open source content management system designed for
