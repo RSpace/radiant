@@ -1,3 +1,25 @@
+== Using radiant-base
+
+This fork of Radiant provides an alternative way to get started on development of
+Radiant-based websites. While the master branch just tracks the Radiant repo, the
+small branch adds a number of essential extensions that most Radiant sites can't
+be without (in my opinion!) and the medium branch adds a number a more advanced
+extensions for larger Radiant sites.
+
+=== Getting started
+
+1. Clone the repository from Github:
+    % git clone -o base git://github.com/RSpace/radiant.git [local directory name]
+
+2. Set up a branch to track your prefered Radiant setup - I use "application" as a name for that branch
+    % git branch --track [name of local branch] base/[small|medium]
+    % git branch --track application base/medium # As an example of my preferred setup
+
+3. Initialize submodules with this command:
+    % git submodule init
+    
+4. Follow the instructions in INSTALL to get the site up and running
+
 == Welcome to Radiant
 
 Radiant is a no-fluff, open source content management system designed for
