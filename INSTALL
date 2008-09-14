@@ -18,7 +18,18 @@ install Radiant:
    (If you would like bootstrap your development database run `rake
    development db:bootstrap`.)
 
-4. Start it like a normal Rails application. To test execute:
+4. Install extensions:
+
+    % rake db:migrate:extensions
+
+5. Configure environment.rb. Look for TODO's in environment.rb and take care of them.
+
+6. Create error templates. Exception Notification adds an additional Page subclass called 
+   InternalServerErrorPage. This and its existing sibling, FileNotFoundPage,
+   determine what gets rendered when an exception is raised. Create one of
+   each within your content tree.
+
+7. Start it like a normal Rails application. To test execute:
    
      % script/server -e production
    
