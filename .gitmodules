@@ -1,0 +1,39 @@
+[submodule "vendor/extensions/reorder"]
+	path = vendor/extensions/reorder
+	url = git://github.com/radiant/radiant-reorder-extension.git
+[submodule "vendor/extensions/copy_move"]
+	path = vendor/extensions/copy_move
+	url = git://github.com/pilu/radiant-copy-move.git
+[submodule "vendor/extensions/exception_notification"]
+	path = vendor/extensions/exception_notification
+	url = git://github.com/digitalpulp/radiant-exception-notification-extension.git
+[submodule "vendor/extensions/settings"]
+	path = vendor/extensions/settings
+	url = git://github.com/Squeegy/radiant-settings.git
+[submodule "vendor/extensions/paperclipped"]
+	path = vendor/extensions/paperclipped
+	url = git://github.com/kbingman/paperclipped.git
+[submodule "vendor/extensions/navigation_tags"]
+	path = vendor/extensions/navigation_tags
+	url = git://github.com/derencius/navigation_tags.git
+[submodule "vendor/extensions/templates"]
+	path = vendor/extensions/templates
+	url = git://github.com/seancribbs/radiant-templates-extension.git
+[submodule "vendor/extensions/sns"]
+	path = vendor/extensions/sns
+	url = git://github.com/MrGossett/radiant_sns_extension.git
+[submodule "vendor/extensions/sns_minifier"]
+	path = vendor/extensions/sns_minifier
+	url = git://github.com/MrGossett/radiant_sns_minifier_extension.git
+[submodule "vendor/extensions/concurrent_draft"]
+	path = vendor/extensions/concurrent_draft
+	url = git://github.com/avonderluft/radiant-concurrent_draft-extension.git
+[submodule "vendor/extensions/nested_layouts"]
+	path = vendor/extensions/nested_layouts
+	url = git://github.com/moklett/radiant-nested-layouts-extension.git
+[submodule "vendor/extensions/mailer"]
+	path = vendor/extensions/mailer
+	url = git://github.com/radiant/radiant-mailer-extension.git
+[submodule "vendor/extensions/help"]
+	path = vendor/extensions/help
+	url = git://github.com/saturnflyer/radiant-help-extension.git

@@ -1,0 +1,89 @@
+== Using radiant-base
+
+This fork of Radiant provides an alternative way to get started on development of
+Radiant-based websites. While the master branch just tracks the Radiant repo, the
+small branch adds a number of essential extensions that most Radiant sites can't
+be without (in my opinion!) and the medium branch adds a number a more advanced
+extensions for larger Radiant sites.
+
+=== Getting started
+
+1. Clone the repository from Github:
+    % git clone -o base git://github.com/RSpace/radiant.git [local directory name]
+
+2. Set up a branch to track your prefered Radiant setup - I use "application" as a name for that branch
+    % git branch --track [name of local branch] base/[small|medium]
+    % git branch --track application base/medium # As an example of my preferred setup
+
+3. Initialize submodules with this command:
+    % git submodule init
+    
+4. Follow the instructions in INSTALL to get the site up and running
+
+=== Contributing to radiant-base
+
+The master branch just tracks the official Radiant repo.
+The small branch has the extensions needed for a small Radiant site. Any changes to README etc. should be made here and then merged into the medium branch.
+The medium branch has everything the small branch has, plus more extensions needed for medium-sized sites.
+
+==== Merging changes in small into medium
+
+% git checkout medium
+% git merge small
+
+== Welcome to Radiant
+
+Radiant is a no-fluff, open source content management system designed for
+small teams. It is similar to Textpattern or MovableType, but is a general
+purpose content management system (not just a blogging engine).
+
+Radiant features:
+
+* An elegant user interface
+* The ability to arrange pages in a hierarchy
+* Flexible templating with layouts, snippets, page parts, and a custom tagging
+  language (Radius: http://radius.rubyforge.org)
+* A simple user management/permissions system
+* Support for Markdown and Textile as well as traditional HTML (it's easy to
+  create other filters)
+* An advanced plugin system
+* Operates in two modes: dev and production depending on the URL
+* A caching system which expires pages every 5 minutes
+* Built using Ruby on Rails
+* And much more...
+
+
+== License
+
+Radiant is released under the MIT license and is copyright (c) 2006-2008
+John W. Long and Sean Cribbs. A copy of the MIT license can be found in the
+LICENSE file.
+
+
+== Installation and Setup
+
+Radiant is a traditional Ruby on Rails application, meaning that you can
+configure and run it the way you would a normal Rails application.
+
+See the INSTALL file for more details.
+
+
+== Support
+
+The best place to get support is on the mailing list:
+
+http://radiantcms.org/mailing-list/
+
+There is also a Trac powered dev site available here:
+
+http://dev.radiantcms.org/
+
+Please Note: Before filing a ticket on the dev site discuss your question or
+problem on the mailing list. This makes it much easier to manage legitimate
+tickets.
+
+Enjoy!
+
+--
+The Radiant Dev Team
+http://radiantcms.org
